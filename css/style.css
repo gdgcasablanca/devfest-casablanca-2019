@@ -22,6 +22,9 @@
   height: 25px;
   padding: 1rem 1rem 1rem 0rem;
 }
+.header-nav {
+  display: flex;
+}
 .header-nav a:last-child {
   margin-right: 0;
 }
@@ -31,11 +34,11 @@
 .header-nav a {
   text-decoration: none;
   color: #6d6e70;
-  padding: 0.4rem 0;
-  margin: 0 0.4rem;
+  padding: 0.4rem;
+  margin: 0 0.1rem;
 }
 .header-nav a:hover {
-  text-decoration: underline;
+  color: #0c0c0c;
 }
 
 .about {
