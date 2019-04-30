@@ -1,0 +1,63 @@
+.btn {
+  color: #fff;
+  background-color: #1a73e8;
+  padding: 12px 20px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.header {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #efefef;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-gdg-logo {
+  height: 25px;
+  padding: 1rem 1rem 1rem 0rem;
+}
+.header-nav a:last-child {
+  margin-right: 0;
+}
+.header-nav a:first-child {
+  margin-left: 0;
+}
+.header-nav a {
+  text-decoration: none;
+  color: #6d6e70;
+  padding: 0.4rem 0;
+  margin: 0 0.4rem;
+}
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+.about {
+  color: #4a4a4a;
+}
+.about h1 {
+  font-size: 45px;
+}
+.about p {
+  max-width: 54ch;
+  line-height: 1.5;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  font-weight: normal;
+  font-display: fallback;
+  src: local("Google Sans"), url("../assets/fonts/GoogleSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Google Sans";
+  font-weight: 800;
+  font-display: fallback;
+  src: local("Google Sans"), url("../assets/fonts/GoogleSans-Bold.ttf");
+}
