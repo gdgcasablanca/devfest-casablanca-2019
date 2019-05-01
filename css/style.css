@@ -4,6 +4,9 @@
   --blue-dark-1: #1d65c3;
   --blue-dark-2: #174ea6;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: #4a4a4a;
 }
