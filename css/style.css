@@ -1,5 +1,11 @@
+:root {
+  --font-stack: "Google Sans", "Open Sans", "Helvetica Neue", sans-serif;
+  --blue: #1a73e8;
+  --blue-dark: #1d65c3;
+}
+
 .btn {
-  --btn-color: #1a73e8;
+  --btn-color: var(--blue);
   display: inline-block;
   border: 1px solid var(--btn-color);
   background-color: var(--btn-color);
@@ -11,14 +17,22 @@
   cursor: pointer;
   transition: color 0.2s ease-out, background-color 0.2s ease-out,
     border-color 0.2s ease-out;
-  font-family: "Google Sans", "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--font-stack);
   text-decoration: none;
 }
 .btn:hover {
-  --btn-color: #1d65c3;
+  --btn-color: var(--blue-dark);
 }
 .btn:focus {
   outline: 0;
+}
+
+.small-text {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin: 0;
+  color: #4a4a4a;
+  font-weight: 500;
 }
 
 .header {
@@ -56,9 +70,11 @@
 
 .about {
   color: #4a4a4a;
+  margin: 4rem 0;
 }
 .about h1 {
   font-size: 45px;
+  margin-top: 0.4rem;
 }
 .about p {
   max-width: 54ch;
