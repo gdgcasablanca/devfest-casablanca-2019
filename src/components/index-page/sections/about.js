@@ -10,6 +10,7 @@ const About = () => {
         <div className="about-image">
           <img
             className="image"
+            alt="Devfest 19 Casablanca"
             src="https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/L2FwcGhvc3RpbmdfZ2xvYmFsL2Jsb2JzL0FFbkIyVW8ySk5adlQ4bEpqTjVIUV9uaEFONTFmLXJtV2h3LUQzYWhTclVYSmI0RzZSRjBxM0tfbVprNzZJTlR3QzRNWFlFRXFxTnJXc1VIRU5WeU5USWxqQmxIdjMzeXpYcUJHSGRPdHhwV2U2T0djMXRZUGJrLlBMcUlDa2hyTnhiSjEtVnQ"
           />
         </div>
