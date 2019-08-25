@@ -57,6 +57,35 @@ a:active {
 .main {
   flex-grow: 1;
 }
+
+.btn {
+  --btn-color: var(--blue);
+  display: inline-block;
+  border: 1px solid var(--btn-color);
+  background-color: var(--btn-color);
+  padding: 12px 20px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out,
+    border-color 0.2s ease-out;
+  font-family: var(--font-stack);
+  text-decoration: none;
+}
+.btn:hover {
+  --btn-color: var(--blue-dark-1);
+  color: #fff;
+}
+.btn:focus {
+  background-color: var(--btn-color);
+  color: #fff;
+}
+.p {
+  max-width: 54ch;
+  line-height: 1.5;
+}
 /* ENDS GLOBALS */
 
 /* Gatsby CSS init styles  */

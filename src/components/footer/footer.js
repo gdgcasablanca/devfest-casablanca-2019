@@ -1,5 +1,6 @@
 import React from "react"
 
+import Section from "../base-section/base-section"
 import Link from "../link/link"
 import "./footer.css"
 
@@ -47,26 +48,29 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer class="footer about-gdg-wtm" id="GDGWTMCasablanca">
-      <div class="container">
-        <p class="small-text">Developer community</p>
-        <h1>GDG & WTM Casablanca</h1>
-        <div class="links-block-wrapper">
-          {footerLinks.map(linksSet => (
-            <div class="links-block">
-              <h5>{linksSet.title}</h5>
-              <ul class="links-list">
-                {linksSet.links.map(({ label, link }) => (
-                  <li>
-                    <Link to={link}>{label}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+    <Section
+      Component="footer"
+      baseClass="footer"
+      classes="about-gdg-wtm"
+      id="GDGWTMCasablanca"
+    >
+      <p class="small-text">Developer community</p>
+      <h1>GDG & WTM Casablanca</h1>
+      <div class="links-block-wrapper">
+        {footerLinks.map(linksSet => (
+          <div class="links-block">
+            <h5>{linksSet.title}</h5>
+            <ul class="links-list">
+              {linksSet.links.map(({ label, link }) => (
+                <li>
+                  <Link to={link}>{label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
-    </footer>
+    </Section>
   )
 }
 
