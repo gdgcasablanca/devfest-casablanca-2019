@@ -1,3 +1,7 @@
 .organizers-link {
   font-size: 24px;
 }
+
+.organizers-content {
+  flex: 1 0 50%;
+}
