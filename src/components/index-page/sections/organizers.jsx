@@ -17,6 +17,7 @@ const Organizers = () => {
           className="organizers-link"
           href="https://www.meetup.com/GDGCasablanca/members/?op=leaders"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Full organizers list
         </a>
