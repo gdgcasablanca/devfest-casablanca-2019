@@ -1,0 +1,31 @@
+.about {
+  color: #4a4a4a;
+}
+.about > .container,
+.about-organizer > .container {
+  display: flex;
+  align-items: center;
+}
+.about-image {
+  max-width: 100%;
+  padding-right: 2rem;
+}
+.about-image > img {
+  width: 100%;
+}
+.about-content {
+  flex: 1 0 50%;
+}
+.about h1 {
+  font-size: 45px;
+  margin-top: 0.4rem;
+}
+.about a.meetup-link {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-organizer > .container {
+  flex-direction: column;
+  align-items: flex-start;
+}
