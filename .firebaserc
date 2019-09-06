@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "devfest-casablanca-2019"
+    "default": "devfest-casablanca-2019",
+    "develop": "devfest-casablanca-2019-dev"
   }
 }
