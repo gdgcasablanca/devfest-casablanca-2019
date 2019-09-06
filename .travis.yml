@@ -4,7 +4,7 @@ node_js:
 
 script:
   - yarn
-  - yarn run build
+  - yarn build
 
 install:
   - npm install -g firebase-tools
@@ -14,7 +14,7 @@ branches:
   only:
     - master
     - develop
-# jobs:
-#   include:
-#     - stage: deploy
-#       script: bash scripts/deploy.sh
+jobs:
+  include:
+    - stage: deploy
+      script: bash scripts/deploy.sh
