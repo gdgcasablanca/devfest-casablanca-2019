@@ -3,9 +3,6 @@
 yarn
 yarn build
 
-firebase list
-echo $FIREBASE_TOKEN
+firebase use default
 
-# firebase use default
-
-# firebase deploy --token $FIREBASE_TOKEN
+firebase deploy --token $FIREBASE_TOKEN
