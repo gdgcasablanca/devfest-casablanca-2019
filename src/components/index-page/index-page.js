@@ -1,16 +1,16 @@
 import React from "react"
 
-import About from "./sections/about"
-import Organizers from "./sections/organizers"
-import Sponsors from "./sections/sponsors"
+import About from "./sections/about/about"
+import Organizers from "./sections/organizers/organizers"
+import Sponsors from "./sections/sponsors/sponsors"
 
 const IndexPage = () => {
   return (
-    <div>
+    <>
       <About />
       <Organizers />
       <Sponsors />
-    </div>
+    </>
   )
 }
 

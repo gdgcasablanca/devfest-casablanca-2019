@@ -1,6 +1,6 @@
 import React from "react"
 
-import Section from "../../base-section/base-section"
+import Section from "../../../base-section/base-section"
 import "./about.css"
 
 const About = () => {
