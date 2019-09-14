@@ -57,12 +57,12 @@ const Footer = () => {
       <p className="small-text">Developer community</p>
       <h1>GDG & WTM Casablanca</h1>
       <div className="links-block-wrapper">
-        {footerLinks.map(linksSet => (
-          <div className="links-block">
+        {footerLinks.map((linksSet, index) => (
+          <div className="links-block" key={index.toString()}>
             <h5>{linksSet.title}</h5>
             <ul className="links-list">
-              {linksSet.links.map(({ label, link }) => (
-                <li>
+              {linksSet.links.map(({ label, link }, index) => (
+                <li key={index.toString()}>
                   <Link to={link}>{label}</Link>
                 </li>
               ))}
