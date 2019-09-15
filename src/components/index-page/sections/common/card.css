@@ -1,0 +1,33 @@
+.card {
+  width: 310px;
+  height: 100px;
+  padding: 20px;
+  border: 1px lightskyblue solid;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 20px 20px 0px;
+}
+
+.card:hover {
+  background-color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.card .speaker-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card .speaker-name {
+  font-size: 28px;
+}
