@@ -1,8 +1,8 @@
 import React from "react"
 
-import Section from "../../base-section/base-section"
+import Section from "../../../base-section/base-section"
 import "./sponsors.css"
-import intelLogo from "../../../images/intel-logo.svg"
+import intelLogo from "../../../../images/intel-logo.svg"
 
 const sponsors = [
   {

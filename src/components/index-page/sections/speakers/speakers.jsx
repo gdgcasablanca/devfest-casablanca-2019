@@ -1,9 +1,9 @@
 import React from "react"
 
-import Section from "../../base-section/base-section"
-import Card from "./common/card"
+import Section from "../../../base-section/base-section"
+import Card from "../common/card"
 import "./speakers.css"
-import willSmith from "../../../images/will-smith.jpg"
+import willSmith from "../../../../images/will-smith.jpg"
 
 const speakers = [
   {

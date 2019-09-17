@@ -1,18 +1,18 @@
 import React from "react"
 
-import About from "./sections/about"
-import Organizers from "./sections/organizers"
-import Sponsors from "./sections/sponsors"
-import Speakers from "./sections/speakers"
+import About from "./sections/about/about"
+import Organizers from "./sections/organizers/organizers"
+import Sponsors from "./sections/sponsors/sponsors"
+import Speakers from "./sections/speakers/speakers"
 
 const IndexPage = () => {
   return (
-    <div>
+    <>
       <About />
       <Organizers />
       <Speakers />
       <Sponsors />
-    </div>
+    </>
   )
 }
 
