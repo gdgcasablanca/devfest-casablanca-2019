@@ -25,33 +25,6 @@ const headerLinks = [
 ]
 
 const Header = ({ siteTitle }) => (
-  // <header
-  //   style={{
-  //     background: `rebeccapurple`,
-  //     marginBottom: `1.45rem`,
-  //   }}
-  // >
-  //   <div
-  //     style={{
-  //       margin: `0 auto`,
-  //       maxWidth: 960,
-  //       padding: `1.45rem 1.0875rem`,
-  //     }}
-  //   >
-  //     <h1 style={{ margin: 0 }}>
-  //       <Link
-  //         to="/"
-  //         style={{
-  //           color: `white`,
-  //           textDecoration: `none`,
-  //         }}
-  //       >
-  //         {siteTitle}
-  //       </Link>
-  //     </h1>
-  //   </div>
-  // </header>
-
   <header className="header">
     <div className="container">
       <Link to="/" className="image-link">
@@ -62,8 +35,8 @@ const Header = ({ siteTitle }) => (
         />
       </Link>
       <nav className="header-nav">
-        {headerLinks.map(({ label, link }) => (
-          <a href={link}>{label}</a>
+        {headerLinks.map(({ label, link }, index) => (
+          <a href={link} key={index.toString()}>{label}</a>
         ))}
       </nav>
     </div>

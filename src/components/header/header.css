@@ -17,19 +17,22 @@
 }
 .header-nav {
   display: flex;
-}
-.header-nav a:last-child {
-  margin-right: 0;
-}
-.header-nav a:first-child {
-  margin-left: 0;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
 }
 .header-nav a {
   text-decoration: none;
   color: #6d6e70;
   padding: 0.4rem;
   margin: 0 0.1rem;
+  white-space: nowrap;
 }
 .header-nav a:hover {
   color: #0c0c0c;
+}
+.header-nav a:last-child {
+  margin-right: 0;
+}
+.header-nav a:first-child {
+  margin-left: 0;
 }
