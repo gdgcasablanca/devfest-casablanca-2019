@@ -1,19 +1,20 @@
-import React from "react"
+import React from 'react'
 
-import Section from "../../../base-section/base-section"
-import "./about.css"
+import Section from '../../../base-section/base-section'
+import Button from '../../../_ui/button/button'
+import styles from './about.module.css'
 
 const About = () => {
   return (
-    <Section classes="about" id="DevFest">
-      <div className="about-image">
+    <Section classes={styles.about} id="DevFest">
+      <div className={styles.aboutImage}>
         <img
           className="image"
           alt="Devfest 19 Casablanca"
           src="https://devfest.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/L2FwcGhvc3RpbmdfZ2xvYmFsL2Jsb2JzL0FFbkIyVW8ySk5adlQ4bEpqTjVIUV9uaEFONTFmLXJtV2h3LUQzYWhTclVYSmI0RzZSRjBxM0tfbVprNzZJTlR3QzRNWFlFRXFxTnJXc1VIRU5WeU5USWxqQmxIdjMzeXpYcUJHSGRPdHhwV2U2T0djMXRZUGJrLlBMcUlDa2hyTnhiSjEtVnQ"
         />
       </div>
-      <div className="about-content">
+      <div className={styles.aboutContent}>
         <p className="small-text">October 19, 2019</p>
         <h1>Welcome to DevFest 19</h1>
         <p className="p">
@@ -28,14 +29,16 @@ const About = () => {
           powered by a shared belief that when developers come together to
           exchange ideas, amazing things can happen.
         </p>
-        <a
-          className="btn meetup-link"
+
+        <Button
+          As="a"
           href="https://www.meetup.com/GDGCasablanca/"
           target="_blank"
           rel="noopener noreferrer"
+          classes={styles.meetupLink}
         >
           Check the meetup page
-        </a>
+        </Button>
       </div>
     </Section>
   )

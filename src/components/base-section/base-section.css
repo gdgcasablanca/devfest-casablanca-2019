@@ -3,7 +3,11 @@
   padding: 6rem 0 4rem;
 }
 .section:nth-child(2n) {
-  background-color: #f9f9f9;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(244, 245, 247, 0.44),
+    #f4f5f7
+  );
 }
 .section h1,
 .footer h1 {

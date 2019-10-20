@@ -1,7 +1,8 @@
-import React from "react"
+import React from 'react'
 
-import Section from "../../../base-section/base-section"
-import "./organizers.css"
+import Section from '../../../base-section/base-section'
+import Button from '../../../_ui/button/button'
+import styles from './organizers.module.css'
 
 const Organizers = () => {
   return (
@@ -13,14 +14,16 @@ const Organizers = () => {
           DevFest Casablaca is brought to you with love, efforts and endless fun
           from the GDG & WTM Casablanca team.
         </p>
-        <a
-          className="organizers-link"
+        <Button
+          color="link"
           href="https://www.meetup.com/GDGCasablanca/members/?op=leaders"
           target="_blank"
           rel="noopener noreferrer"
+          As="a"
+          classes={styles.organizersLink}
         >
           Full organizers list
-        </a>
+        </Button>
       </div>
     </Section>
   )
