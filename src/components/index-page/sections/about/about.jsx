@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Section from '../../../base-section/base-section'
+import Section from '../../../_ui/base-section/base-section'
 import Button from '../../../_ui/button/button'
 import styles from './about.module.css'
 

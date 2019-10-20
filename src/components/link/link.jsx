@@ -11,9 +11,9 @@ const Link = ({ to, children, ...otherProps }) => {
     ...otherProps,
   }
   return (
-    <Button color="link" As="a" {...anchorProps}>
+    <a className="link" {...anchorProps}>
       {children}
-    </Button>
+    </a>
   )
 }
 
