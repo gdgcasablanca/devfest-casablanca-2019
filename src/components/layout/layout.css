@@ -21,20 +21,6 @@ body {
 }
 
 /* GLOBALS */
-.link {
-  color: var(--blue);
-  text-decoration: none;
-}
-.link:hover {
-  color: var(--blue-dark-2);
-}
-.link:focus,
-.link:active {
-  background-color: rgba(32, 33, 36, 0.05);
-  color: var(--blue-dark-2);
-  outline: 2px solid rgba(32, 33, 36, 0.05);
-}
-
 .container {
   max-width: 1140px;
   margin: 0 auto;

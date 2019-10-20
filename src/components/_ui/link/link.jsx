@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import styles from './link.module.css'
+
 const Link = ({ to, children, ...otherProps }) => {
   const anchorProps = {
     href: to,
@@ -10,7 +12,7 @@ const Link = ({ to, children, ...otherProps }) => {
   }
 
   return (
-    <a className="link" {...anchorProps}>
+    <a className={styles.link} {...anchorProps}>
       {children}
     </a>
   )
