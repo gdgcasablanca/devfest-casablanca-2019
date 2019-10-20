@@ -2,7 +2,7 @@ import React from 'react'
 
 import Section from '../../../base-section/base-section'
 import Button from '../../../_ui/button/button'
-import styles from './sponsors.module.css'
+// import styles from './sponsors.module.css'
 
 const Sponsors = () => {
   return (

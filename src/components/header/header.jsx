@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 
 import GDGCasaLogo from '../../images/logo-gdg.svg'
 import styles from './header.module.css'
-import Button from '../_ui/button/button'
 
 const headerLinks = [
   {
