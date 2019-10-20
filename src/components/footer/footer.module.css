@@ -28,9 +28,9 @@
 .linksList li {
   margin-bottom: 4px;
 }
-.linksList li a {
+.linksList li a.footerLink {
   color: #6e6e6e;
 }
-.linksList li a:hover {
-  color: #4a4a4a;
+.linksList li a.footerLink:hover {
+  color: #202020;
 }

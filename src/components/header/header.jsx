@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 import GDGCasaLogo from '../../images/logo-gdg.svg'
+import Button from '../_ui/button/button'
 import styles from './header.module.css'
 
 const headerLinks = [
@@ -36,9 +37,15 @@ const Header = ({ siteTitle }) => (
       </Link>
       <nav className={styles.headerNav}>
         {headerLinks.map(({ label, link }, index) => (
-          <a className="link" href={link} key={index.toString()}>
+          <Button
+            As={Link}
+            color="link"
+            classes={styles.headerLink}
+            href={link}
+            key={index.toString()}
+          >
             {label}
-          </a>
+          </Button>
         ))}
       </nav>
     </div>

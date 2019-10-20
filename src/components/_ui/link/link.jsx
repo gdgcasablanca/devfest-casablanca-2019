@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Button from '../_ui/button/button'
-
 const Link = ({ to, children, ...otherProps }) => {
   const anchorProps = {
     href: to,
@@ -10,6 +8,7 @@ const Link = ({ to, children, ...otherProps }) => {
     rel: 'noopener noreferrer',
     ...otherProps,
   }
+
   return (
     <a className="link" {...anchorProps}>
       {children}

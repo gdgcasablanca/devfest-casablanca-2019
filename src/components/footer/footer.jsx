@@ -1,7 +1,8 @@
 import React from 'react'
 
-import Section from '../base-section/base-section'
-import Link from '../link/link'
+import Section from '../_ui/base-section/base-section'
+import Button from '../_ui/button/button'
+import Link from '../_ui/link/link'
 import styles from './footer.module.css'
 
 const footerLinks = [
@@ -63,9 +64,14 @@ const Footer = () => {
             <ul className={styles.linksList}>
               {linksSet.links.map(({ label, link }, index) => (
                 <li key={index.toString()}>
-                  <Link className="link" to={link}>
+                  <Button
+                    color="link"
+                    As={Link}
+                    classes={styles.footerLink}
+                    to={link}
+                  >
                     {label}
-                  </Link>
+                  </Button>
                 </li>
               ))}
             </ul>

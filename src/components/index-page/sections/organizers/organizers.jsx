@@ -1,7 +1,8 @@
 import React from 'react'
 
-import Section from '../../../base-section/base-section'
+import Section from '../../../_ui/base-section/base-section'
 import Button from '../../../_ui/button/button'
+import Link from '../../../_ui/link/link'
 import styles from './organizers.module.css'
 
 const Organizers = () => {
@@ -14,11 +15,9 @@ const Organizers = () => {
         from the GDG & WTM Casablanca team.
       </p>
       <Button
+        As={Link}
         color="link"
         href="https://www.meetup.com/GDGCasablanca/members/?op=leaders"
-        target="_blank"
-        rel="noopener noreferrer"
-        As="a"
         classes={styles.organizersLink}
       >
         Full organizers list

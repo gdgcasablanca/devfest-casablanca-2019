@@ -19,16 +19,16 @@
   flex-wrap: nowrap;
   overflow-x: scroll;
 }
-.headerNav a {
+.headerNav a.headerLink {
   color: #6d6e70;
   padding: 0.4rem;
   white-space: nowrap;
   margin: 2px;
 }
-.headerNav a:hover {
-  color: #0c0c0c;
+.headerNav a.headerLink:hover {
+  color: #202020;
 }
-.headerNav a + a {
+.headerNav a.headerLink + a.headerLink {
   margin-left: 0.2rem;
 }
 
