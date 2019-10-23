@@ -1,5 +1,6 @@
 import React from 'react'
 
+import GDGCasaLogo from '../../images/logo-gdg.svg'
 import Section from '../_ui/base-section/base-section'
 import Button from '../_ui/button/button'
 import Link from '../_ui/link/link'
@@ -77,6 +78,20 @@ const Footer = () => {
             </ul>
           </div>
         ))}
+      </div>
+      <hr />
+      <div className={styles.footerBottom}>
+        <img
+          src={GDGCasaLogo}
+          alt="GDG Casablanca Logo"
+          className={styles.footerLogo}
+        />
+        <p className={styles.copyRight}>
+          By <strong>GDG Casablanca</strong> Team. The code is @&nbsp;
+          <Link to="https://github.com/GDG-casablanca/devfest-coming-soon">
+            Github
+          </Link>
+        </p>
       </div>
     </Section>
   )
