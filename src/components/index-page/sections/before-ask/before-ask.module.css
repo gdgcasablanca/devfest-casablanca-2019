@@ -1,0 +1,29 @@
+.beforeWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beforeRight {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.twiny18Link {
+  margin-top: 2rem;
+}
+
+.statWrapper {
+  color: black;
+  line-height: 1;
+  flex: 0 0 50%;
+  text-align: right;
+  margin-bottom: 3rem;
+}
+
+.statNumber {
+  font-size: 2.3rem;
+}
+.statLabel {
+  text-transform: capitalize;
+}
