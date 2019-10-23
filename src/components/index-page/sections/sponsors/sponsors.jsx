@@ -1,7 +1,9 @@
-import React from "react"
+import React from 'react'
 
-import Section from "../../../base-section/base-section"
-import "./sponsors.css"
+import Section from '../../../_ui/base-section/base-section'
+import Button from '../../../_ui/button/button'
+import Link from '../../../_ui/link/link'
+// import styles from './sponsors.module.css'
 
 const Sponsors = () => {
   return (
@@ -10,15 +12,14 @@ const Sponsors = () => {
         <p className="small-text">Be part of Devfest 19 Casablanca</p>
         <h1>Want to became our Sponsor or partner?</h1>
         <p className="p">
-          For more info, contact us at: {' '}
-          <a
-            className="email-link"
+          For more info, contact us at:&nbsp;
+          <Button
+            As={Link}
+            color="link"
             href="mailto:contact@gdgcasablanca.com"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             contact@gdgcasablanca.com
-          </a>
+          </Button>
         </p>
       </div>
     </Section>

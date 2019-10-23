@@ -1,0 +1,69 @@
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+
+  --btn-bgcolor: var(--blue);
+
+  border: 1px solid var(--btn-bgcolor);
+  background-color: var(--btn-bgcolor);
+  color: var(--white);
+  outline: 4px solid transparent;
+
+  font-family: var(--font-stack);
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+
+  transition: 0.2s ease-out;
+  transition-property: color, background-color, border-color, outline;
+}
+
+.button.btnBlue {
+  --btn-bgcolor: var(--blue);
+  color: var(--white);
+}
+.button.btnBlue:hover {
+  --btn-bgcolor: var(--blue-dark-1);
+  color: var(--white);
+}
+.button.btnBlue:focus,
+.button.btnBlue:active {
+  --btn-bgcolor: var(--blue-dark-2);
+  color: #fff;
+}
+
+.button.btnWhite {
+  --btn-bgcolor: var(--white);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.button.btnWhite:hover {
+  --btn-bgcolor: var(--white);
+  border-color: var(--blue-dark-1);
+  color: var(--blue-dark-1);
+}
+.button.btnWhite:focus,
+.button.btnWhite:active {
+  --btn-bgcolor: var(--white);
+  border-color: var(--blue-dark-2);
+  color: var(--blue-dark-2);
+}
+
+.button.btnLink {
+  --btn-bgcolor: transparent;
+  color: var(--blue);
+  border: none;
+  padding: 0px;
+  border-radius: 0;
+}
+.button.btnLink:hover {
+  color: var(--blue-dark-1);
+}
+.button.btnLink:focus,
+.button.btnLink:active {
+  color: var(--blue-dark-2);
+  background-color: rgba(32, 33, 36, 0.05);
+  outline: 4px solid rgba(32, 33, 36, 0.05);
+}

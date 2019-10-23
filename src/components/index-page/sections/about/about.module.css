@@ -1,35 +1,35 @@
 .about {
   color: #4a4a4a;
 }
-.about > .container {
+.about > :global(.container) {
   display: flex;
   align-items: center;
 }
-.about-image {
+.aboutImage {
   max-width: 100%;
   padding-right: 2rem;
 }
-.about-image > img {
+.aboutImage > img {
   width: 100%;
 }
-.about-content {
+.aboutContent {
   flex: 1 0 50%;
 }
 .about h1 {
   font-size: 45px;
   margin-top: 0.4rem;
 }
-.about a.meetup-link {
-  margin-top: 1rem;
+.about a.meetupLink {
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
-  .about > .container {
+  .about > :global(.container) {
     flex-direction: column;
     align-items: start;
   }
-  .about-image {
+  .aboutImage {
     padding-bottom: 2rem;
   }
 }
