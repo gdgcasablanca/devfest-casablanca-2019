@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => (
             As={Link}
             color="link"
             classes={styles.headerLink}
-            href={link}
+            to={link}
             key={index.toString()}
           >
             {label}
