@@ -1,39 +1,40 @@
-import React from "react"
+import React from 'react'
 
-import Section from "../../../base-section/base-section"
-import Card from "../common/card"
-import "./speakers.css"
-import willSmith from "../../../../images/will-smith.jpg"
+import './speakers.css'
+import Section from '../../../_ui/base-section/base-section'
+import Card from '../common/card'
+import Button from '../../../_ui/button/button'
+import willSmith from '../../../../images/will-smith.jpg'
 
 const speakers = [
   {
-    name: "Will Smith",
-    description: "Product Designer, Google",
+    name: 'Will Smith',
+    description: 'Product Designer, Google',
     img: willSmith,
   },
   {
-    name: "Will Smith",
-    description: "Product Designer, Google",
+    name: 'Will Smith',
+    description: 'Product Designer, Google',
     img: willSmith,
   },
   {
-    name: "Will Smith",
-    description: "Product Designer, Google",
+    name: 'Will Smith',
+    description: 'Product Designer, Google',
     img: willSmith,
   },
   {
-    name: "Will Smith",
-    description: "Product Designer, Google",
+    name: 'Will Smith',
+    description: 'Product Designer, Google',
     img: willSmith,
   },
   {
-    name: "Will Smith",
-    description: "Product Designer, Google",
+    name: 'Will Smith',
+    description: 'Product Designer, Google',
     img: willSmith,
   },
   {
-    name: "Will Smith",
-    description: "Product Designer, Google",
+    name: 'Will Smith',
+    description: 'Product Designer, Google',
     img: willSmith,
   },
 ]
@@ -50,9 +51,13 @@ const Speakers = () => {
             <Card {...item} key={index} />
           ))}
         </div>
-        <a className="btn" href="/" target="_blank" rel="noopener noreferrer">
-          SEE ALL SPEAKERS
-        </a>
+        <Button>SEE ALL SPEAKERS</Button>
+        {/* <a
+          className="btn"
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+        ></a> */}
       </div>
     </Section>
   )

@@ -1,24 +1,27 @@
-import React from "react"
+import React from 'react'
 
-import Section from "../../../base-section/base-section"
-import "./sponsors.css"
-import intelLogo from "../../../../images/intel-logo.svg"
+import './sponsors.css'
+// import styles from './sponsors.module.css'
+import Section from '../../../_ui/base-section/base-section'
+import intelLogo from '../../../../images/intel-logo.svg'
+import Button from '../../../_ui/button/button'
+import Link from '../../../_ui/link/link'
 
 const sponsors = [
   {
-    name: "Accenture",
+    name: 'Accenture',
     img: intelLogo,
   },
   {
-    name: "Intel",
+    name: 'Intel',
     img: intelLogo,
   },
   {
-    name: "Atos",
+    name: 'Atos',
     img: intelLogo,
   },
   {
-    name: "SAP",
+    name: 'SAP',
     img: intelLogo,
   },
 ]
@@ -38,14 +41,9 @@ const Sponsors = () => {
             <img src={item.img} alt={item.name} key={index} />
           ))}
         </div>
-        <a
-          className="btn btn-inv"
-          href="/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Button As={Link} color="white" href="#!">
           BECOME A PARTNER
-        </a>
+        </Button>
       </div>
     </Section>
   )
