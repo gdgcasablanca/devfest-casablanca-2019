@@ -1,7 +1,6 @@
 import React from 'react'
 
 import './sponsors.css'
-// import styles from './sponsors.module.css'
 import Section from '../../../_ui/base-section/base-section'
 import intelLogo from '../../../../images/intel-logo.svg'
 import Button from '../../../_ui/button/button'

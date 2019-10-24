@@ -52,12 +52,6 @@ const Speakers = () => {
           ))}
         </div>
         <Button>SEE ALL SPEAKERS</Button>
-        {/* <a
-          className="btn"
-          href="/"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a> */}
       </div>
     </Section>
   )
