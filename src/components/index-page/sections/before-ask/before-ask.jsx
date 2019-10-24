@@ -21,9 +21,6 @@ const BeforeAsk = () => {
             Our team creates DevFest to be the best place for experience sharing
             in a phenomenal atmosphere.
           </p>
-          <Button As={Link} href="#!" classes={styles.twiny18Link}>
-            See How It Was In 2018
-          </Button>
         </div>
         <div className={styles.beforeRight}>
           {beforeStats.map(({ number, label }, index) => (
@@ -31,6 +28,9 @@ const BeforeAsk = () => {
           ))}
         </div>
       </div>
+      <Button As={Link} href="#!" classes={styles.twiny18Link}>
+        See How It Was In 2018
+      </Button>
     </Section>
   )
 }

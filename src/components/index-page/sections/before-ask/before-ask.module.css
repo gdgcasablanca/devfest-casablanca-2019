@@ -18,7 +18,7 @@
   line-height: 1;
   flex: 0 0 50%;
   text-align: right;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .statNumber {
@@ -26,4 +26,16 @@
 }
 .statLabel {
   text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .beforeWrapper {
+    flex-direction: column;
+  }
+  .beforeLeft {
+    margin-bottom: 2rem;
+  }
+  .statWrapper {
+    text-align: left;
+  }
 }
