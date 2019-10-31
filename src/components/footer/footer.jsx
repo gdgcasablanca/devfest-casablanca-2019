@@ -70,6 +70,7 @@ const Footer = () => {
                     As={Link}
                     classes={styles.footerLink}
                     to={link}
+                    uppercase={false}
                   >
                     {label}
                   </Button>
