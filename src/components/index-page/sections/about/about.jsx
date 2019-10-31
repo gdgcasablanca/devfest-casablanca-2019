@@ -3,6 +3,7 @@ import React from 'react'
 import Section from '../../../_ui/base-section/base-section'
 import Button from '../../../_ui/button/button'
 import styles from './about.module.css'
+import Link from '../../../_ui/link/link'
 
 const About = () => {
   return (
@@ -31,10 +32,8 @@ const About = () => {
         </p>
 
         <Button
-          As="a"
+          As={Link}
           href="https://www.meetup.com/GDGCasablanca/"
-          target="_blank"
-          rel="noopener noreferrer"
           classes={styles.meetupLink}
         >
           Check the meetup page
