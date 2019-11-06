@@ -17,13 +17,13 @@ const ImageGallery = () => {
     <Section>
       <div className={styles.imageGrid}>
         <div className={cx(styles.gridItem, styles.imageItem)}>
-          <img src={image01} alt="DevFest 18 photo 01"/>
+          <img src={image01} alt="DevFest 18 Casablanca 01"/>
         </div>
         <div className={cx(styles.gridItem, styles.imageItem)}>
-          <img src={image02} alt="DevFest 18 photo 02"/>
+          <img src={image02} alt="DevFest 18 Casablanca 02"/>
         </div>
         <div className={cx(styles.gridItem, styles.imageItem)}>
-          <img src={image03} alt="DevFest 18 photo 03"/>
+          <img src={image03} alt="DevFest 18 Casablanca 03"/>
         </div>
         <div className={cx(styles.gridItem, styles.hightlights)}>
           <h3>#DevFest18 highlights</h3>
@@ -34,13 +34,13 @@ const ImageGallery = () => {
           <Button color="white">SEE ALL PHOTOS</Button>
         </div>
         <div className={cx(styles.gridItem, styles.imageItem)}>
-          <img src={image04} alt="DevFest 18 photo 04"/>
+          <img src={image04} alt="DevFest 18 Casablanca 04"/>
         </div>
         <div className={cx(styles.gridItem, styles.imageItem)}>
-          <img src={image05} alt="DevFest 18 photo 05"/>
+          <img src={image05} alt="DevFest 18 Casablanca 05"/>
         </div>
         <div className={cx(styles.gridItem, styles.imageItem)}>
-          <img src={image06} alt="DevFest 18 photo 06"/>
+          <img src={image06} alt="DevFest 18 Casablanca 06"/>
         </div>
       </div>
     </Section>
