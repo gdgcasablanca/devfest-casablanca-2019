@@ -10,7 +10,7 @@ const BaseSection = ({
   id,
 }) => {
   return (
-    <Component className={`${baseClass} ${classes}`} id={id}>
+    <Component className={`${baseClass}${classes ? ` ${classes}` : ''}`} id={id}>
       <div className="container">{children}</div>
     </Component>
   )
