@@ -1,9 +1,10 @@
 import React from 'react'
 
 import About from './sections/about/about'
-import Organizers from './sections/organizers/organizers'
-import Sponsors from './sections/sponsors/sponsors'
 import BeforeAsk from './sections/before-ask/before-ask'
+import Organizers from './sections/organizers/organizers'
+import Speakers from './sections/speakers/speakers'
+import Sponsors from './sections/sponsors/sponsors'
 
 const IndexPage = () => {
   return (
