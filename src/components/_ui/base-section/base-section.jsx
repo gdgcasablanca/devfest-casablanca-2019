@@ -1,16 +1,17 @@
-import React from "react"
+import React from 'react'
+import cx from 'classnames'
 
-import "./base-section.css"
+import './base-section.css'
 
 const BaseSection = ({
-  baseClass = "section",
+  baseClass = 'section',
   children,
   classes,
-  Component = "section",
+  Component = 'section',
   id,
 }) => {
   return (
-    <Component className={`${baseClass} ${classes}`} id={id}>
+    <Component className={cx(baseClass, classes)} id={id}>
       <div className="container">{children}</div>
     </Component>
   )

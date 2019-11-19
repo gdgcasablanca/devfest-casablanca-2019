@@ -1,4 +1,5 @@
 import React from 'react'
+import cx from 'classnames'
 
 import GDGCasaLogo from '../../images/logo-gdg.svg'
 import Section from '../_ui/base-section/base-section'
@@ -53,7 +54,7 @@ const Footer = () => {
     <Section
       Component="footer"
       baseClass="footer"
-      classes={`about-gdg-wtm ${styles.footer}`}
+      classes={cx('about-gdg-wtm', styles.footer)}
       id="GDGWTMCasablanca"
     >
       <p className="small-text">Developer community</p>
@@ -70,6 +71,7 @@ const Footer = () => {
                     As={Link}
                     classes={styles.footerLink}
                     to={link}
+                    uppercase={false}
                   >
                     {label}
                   </Button>

@@ -15,6 +15,7 @@ const Sponsors = () => {
           For more info, contact us at:&nbsp;
           <Button
             As={Link}
+            uppercase={false}
             color="link"
             href="mailto:contact@gdgcasablanca.com"
           >
