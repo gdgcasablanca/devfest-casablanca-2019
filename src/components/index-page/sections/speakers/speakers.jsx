@@ -1,24 +1,24 @@
 import React from 'react'
 
-import './speakers.css'
+import styles from './speakers.module.css'
 import Section from '../../../_ui/base-section/base-section'
-import Card from '../common/card'
-import Button from '../../../_ui/button/button'
+import Card from '../../../_ui/card/card'
+// import Button from '../../../_ui/button/button'
 import willSmith from '../../../../images/will-smith.jpg'
 
 const Speakers = () => {
   return (
-    <Section classes="speakers" id="Speakers">
-      <div className="speakers-content">
+    <Section classes={styles.speakers} id="Speakers">
+      <div className={styles.speakersContent}>
         <p className="small-text">What is DevFest?</p>
         <h1>Speakers</h1>
         <p className="p">Some word about speakers</p>
-        <div className="speakers-cards">
+        <div className={styles.speakersCards}>
           {speakers.map((item, index) => (
             <Card {...item} key={index.toString()} />
           ))}
         </div>
-        <Button>SEE ALL SPEAKERS</Button>
+        {/* <Button>SEE ALL SPEAKERS</Button> */}
       </div>
     </Section>
   )

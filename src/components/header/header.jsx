@@ -16,7 +16,11 @@ const headerLinks = [
     link: '#Organizers',
   },
   {
-    label: 'Sponsors & Partners',
+    label: 'Speakers',
+    link: '#Speakers',
+  },
+  {
+    label: 'Sponsors',
     link: '#Sponsors',
   },
   {

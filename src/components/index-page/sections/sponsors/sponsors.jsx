@@ -46,7 +46,12 @@ const Sponsors = () => {
             )}
           </div>
         </div>
-        <Button As={Link} color="white" href="#!">
+        <Button
+          As={Link}
+          href="mailto:contact@gdgcasablanca.com"
+          color="white"
+          target="_blank"
+        >
           BECOME A PARTNER
         </Button>
       </div>
