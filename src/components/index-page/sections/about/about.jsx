@@ -35,6 +35,7 @@ const About = () => {
           As={Link}
           href="https://www.meetup.com/GDGCasablanca/"
           classes={styles.meetupLink}
+          target="_blank"
         >
           Check the meetup page
         </Button>

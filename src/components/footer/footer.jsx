@@ -70,8 +70,9 @@ const Footer = () => {
                     color="link"
                     As={Link}
                     classes={styles.footerLink}
-                    to={link}
+                    href={link}
                     uppercase={false}
+                    target="_blank"
                   >
                     {label}
                   </Button>
@@ -90,7 +91,10 @@ const Footer = () => {
         />
         <p className={styles.copyRight}>
           By <strong>GDG Casablanca</strong> Team. The code is @&nbsp;
-          <Link to="https://github.com/GDG-casablanca/devfest-coming-soon">
+          <Link
+            to="https://github.com/GDG-casablanca/devfest-coming-soon"
+            target="_blank"
+          >
             Github
           </Link>
         </p>

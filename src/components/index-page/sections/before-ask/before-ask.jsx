@@ -28,7 +28,12 @@ const BeforeAsk = () => {
           ))}
         </div>
       </div>
-      <Button As={Link} href="#!" classes={styles.twiny18Link}>
+      <Button
+        As={Link}
+        href="https://www.youtube.com/watch?v=NI-jx4HXRe0"
+        classes={styles.twiny18Link}
+        target="_blank"
+      >
         See How It Was In 2018
       </Button>
     </Section>
