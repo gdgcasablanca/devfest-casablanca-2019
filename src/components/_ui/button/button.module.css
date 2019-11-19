@@ -1,6 +1,8 @@
 .button {
   display: inline-block;
   padding: 0 16px;
+  line-height: 36px;
+
   border-radius: 3px;
   cursor: pointer;
 
@@ -23,16 +25,11 @@
 .button.btnBlue {
   --btn-bgcolor: var(--blue);
   color: var(--white);
-
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  line-height: 36px;
 }
 .button.btnBlue:hover {
   --btn-bgcolor: var(--blue-dark-1);
   color: var(--white);
+  box-shadow: 0 1px 2px 0 rgba(66, 133, 244, .3), 0 1px 3px 1px rgba(66, 133, 244, .15);
 }
 .button.btnBlue:focus,
 .button.btnBlue:active {
@@ -49,12 +46,21 @@
   --btn-bgcolor: var(--white);
   border-color: var(--blue-dark-1);
   color: var(--blue-dark-1);
+  background-color: #f5f8fb;
+  box-shadow: 0 1px 2px 0 rgba(66, 133, 244, .3), 0 1px 3px 1px rgba(66, 133, 244, .15);
 }
 .button.btnWhite:focus,
 .button.btnWhite:active {
   --btn-bgcolor: var(--white);
   border-color: var(--blue-dark-2);
   color: var(--blue-dark-2);
+}
+.button.uppercase {
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .button.btnLink {
@@ -63,6 +69,7 @@
   border: none;
   padding: 0px;
   border-radius: 0;
+  line-height: initial;
 }
 .button.btnLink:hover {
   color: var(--blue-dark-1);
