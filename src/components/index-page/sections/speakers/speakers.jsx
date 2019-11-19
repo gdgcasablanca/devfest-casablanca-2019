@@ -6,39 +6,6 @@ import Card from '../common/card'
 import Button from '../../../_ui/button/button'
 import willSmith from '../../../../images/will-smith.jpg'
 
-const speakers = [
-  {
-    name: 'Will Smith',
-    description: 'Product Designer, Google',
-    img: willSmith,
-  },
-  {
-    name: 'Will Smith',
-    description: 'Product Designer, Google',
-    img: willSmith,
-  },
-  {
-    name: 'Will Smith',
-    description: 'Product Designer, Google',
-    img: willSmith,
-  },
-  {
-    name: 'Will Smith',
-    description: 'Product Designer, Google',
-    img: willSmith,
-  },
-  {
-    name: 'Will Smith',
-    description: 'Product Designer, Google',
-    img: willSmith,
-  },
-  {
-    name: 'Will Smith',
-    description: 'Product Designer, Google',
-    img: willSmith,
-  },
-]
-
 const Speakers = () => {
   return (
     <Section classes="speakers" id="Speakers">
@@ -48,7 +15,7 @@ const Speakers = () => {
         <p className="p">Some word about speakers</p>
         <div className="speakers-cards">
           {speakers.map((item, index) => (
-            <Card {...item} key={index} />
+            <Card {...item} key={index.toString()} />
           ))}
         </div>
         <Button>SEE ALL SPEAKERS</Button>
@@ -56,5 +23,56 @@ const Speakers = () => {
     </Section>
   )
 }
+
+const speakers = [
+  {
+    name: 'Will Smith',
+    description: 'Product Designer, Google',
+    img: willSmith,
+    talkTitle: 'Introductions to hulu',
+    talkDesc:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
+  },
+  {
+    name: 'Will Smith',
+    description: 'Product Designer, Google',
+    img: willSmith,
+    talkTitle: 'Introductions to hulu',
+    talkDesc:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
+  },
+  {
+    name: 'Will Smith',
+    description: 'Product Designer, Google',
+    img: willSmith,
+    talkTitle: 'Introductions to hulu',
+    talkDesc:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
+  },
+  {
+    name: 'Will Smith',
+    description: 'Product Designer, Google',
+    img: willSmith,
+    talkTitle: 'Introductions to hulu',
+    talkDesc:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
+  },
+  {
+    name: 'Will Smith',
+    description: 'Product Designer, Google',
+    img: willSmith,
+    talkTitle: 'Introductions to hulu',
+    talkDesc:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
+  },
+  {
+    name: 'Will Smith',
+    description: 'Product Designer, Google',
+    img: willSmith,
+    talkTitle: 'Introductions to hulu',
+    talkDesc:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
+  },
+]
 
 export default Speakers
