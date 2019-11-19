@@ -28,7 +28,7 @@ const speakers = [
   {
     name: 'Will Smith',
     description: 'Product Designer, Google',
-    img: willSmith,
+    // img: willSmith,
     talkTitle: 'Introductions to hulu',
     talkDesc:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
