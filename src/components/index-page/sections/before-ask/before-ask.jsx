@@ -15,7 +15,7 @@ const BeforeAsk = () => {
           <p className="p">
             GDG DevFest Casablanca brings together the world class experts in
             Android, Web and Cloud technologies to Casablanca for 1 days of
-            sessinons, workshops and showcases.
+            sessions, workshops and showcases.
           </p>
           <p className="p">
             Our team creates DevFest to be the best place for experience sharing
@@ -28,7 +28,12 @@ const BeforeAsk = () => {
           ))}
         </div>
       </div>
-      <Button As={Link} href="#!" classes={styles.twiny18Link}>
+      <Button
+        As={Link}
+        href="https://www.youtube.com/watch?v=NI-jx4HXRe0"
+        classes={styles.twiny18Link}
+        target="_blank"
+      >
         See How It Was In 2018
       </Button>
     </Section>
@@ -44,8 +49,8 @@ const Stat = ({ number, label }) => (
 
 const beforeStats = [
   { number: '+210', label: 'Attendees' },
-  { number: '2', label: 'days' },
-  { number: '20', label: 'sessions' },
+  { number: '1', label: 'day' },
+  { number: '+10', label: 'sessions' },
   { number: '2', label: 'tracks' },
 ]
 

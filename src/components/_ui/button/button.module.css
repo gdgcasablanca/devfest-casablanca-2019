@@ -29,12 +29,12 @@
 .button.btnBlue:hover {
   --btn-bgcolor: var(--blue-dark-1);
   color: var(--white);
-  box-shadow: 0 1px 2px 0 rgba(66, 133, 244, .3), 0 1px 3px 1px rgba(66, 133, 244, .15);
+  box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3),
+    0 1px 3px 1px rgba(66, 133, 244, 0.15);
 }
 .button.btnBlue:focus,
 .button.btnBlue:active {
   --btn-bgcolor: var(--blue-dark-2);
-  color: #fff;
 }
 
 .button.btnWhite {
@@ -47,7 +47,8 @@
   border-color: var(--blue-dark-1);
   color: var(--blue-dark-1);
   background-color: #f5f8fb;
-  box-shadow: 0 1px 2px 0 rgba(66, 133, 244, .3), 0 1px 3px 1px rgba(66, 133, 244, .15);
+  box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3),
+    0 1px 3px 1px rgba(66, 133, 244, 0.15);
 }
 .button.btnWhite:focus,
 .button.btnWhite:active {

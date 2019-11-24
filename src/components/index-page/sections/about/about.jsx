@@ -16,7 +16,7 @@ const About = () => {
         />
       </div>
       <div className={styles.aboutContent}>
-        <p className="small-text">October 19, 2019</p>
+        <p className="small-text">November 30, 2019</p>
         <h1>Welcome to DevFest 19</h1>
         <p className="p">
           DevFests are community-led, developer events hosted by GDG chapters
@@ -35,6 +35,7 @@ const About = () => {
           As={Link}
           href="https://www.meetup.com/GDGCasablanca/"
           classes={styles.meetupLink}
+          target="_blank"
         >
           Check the meetup page
         </Button>

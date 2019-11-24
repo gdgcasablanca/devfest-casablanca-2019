@@ -3,13 +3,16 @@
   --blue: #1a73e8;
   --blue-dark-1: #1d65c3;
   --blue-dark-2: #174ea6;
+  --blue-light: #c1dcff;
 
   --yellow: #fbbc03;
   --green: #33a853;
   --red: #ea4335;
 
   --white: #ffffff;
-  --light-grey: #f1f3f5;
+  --grey-100: #f1f3f5;
+  --grey-200: #e8eaeb;
+  --grey-700: #4a4a4a;
 }
 html {
   scroll-behavior: smooth;
@@ -19,9 +22,21 @@ html {
 }
 body {
   margin: 0;
-  color: #4a4a4a;
+  color: var(--grey-700);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+p {
+  line-height: 1.5;
 }
 
 /* GLOBALS */
@@ -42,7 +57,6 @@ body {
 
 .p {
   max-width: 54ch;
-  line-height: 1.5;
 }
 
 .p + .p {

@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 
 import GDGCasaLogo from '../../images/logo-gdg.svg'
 import Button from '../_ui/button/button'
+import Link from '../_ui/link/link'
 import styles from './header.module.css'
 
 const headerLinks = [
@@ -16,7 +16,11 @@ const headerLinks = [
     link: '#Organizers',
   },
   {
-    label: 'Sponsors & Partners',
+    label: 'Speakers',
+    link: '#Speakers',
+  },
+  {
+    label: 'Sponsors',
     link: '#Sponsors',
   },
   {
@@ -28,7 +32,7 @@ const headerLinks = [
 const Header = ({ siteTitle }) => (
   <header className={styles.header}>
     <div className="container">
-      <Link to="/" className={styles.imageLink}>
+      <Link href="/" className={styles.imageLink} internal>
         <img
           className={styles.headerGdgLogo}
           src={GDGCasaLogo}
@@ -41,7 +45,7 @@ const Header = ({ siteTitle }) => (
             As={Link}
             color="link"
             classes={styles.headerLink}
-            to={link}
+            href={link}
             key={index.toString()}
           >
             {label}
