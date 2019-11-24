@@ -26,6 +26,12 @@
   white-space: nowrap;
   margin: 2px;
 }
+.headerNav a.headerLink:active,
+.headerNav a.headerLink:focus {
+  background-color: var(--blue-lighter);
+  outline: 4px solid var(--blue-lighter);
+}
+
 .headerNav a.headerLink:hover {
   color: #202020;
 }
@@ -39,5 +45,57 @@
 }
 .imageLink:focus,
 .imageLink:focus {
-  outline: 3px dashed rgba(32, 33, 36, 0.2);
+  outline: 2px solid rgba(32, 33, 36, 0.2);
+}
+
+.burgerTrigger > span {
+  height: 3px;
+  width: 20px;
+  display: block;
+  background-color: var(--grey-700);
+}
+.burgerTrigger > span:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.burgerTrigger {
+  background-color: transparent;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}
+.burgerTrigger:focus {
+  outline: 2px solid var(--grey-200);
+  background-color: var(--grey-100);
+}
+
+@media (max-width: 768px) {
+  .headerNav {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: var(--nav-height, 56px);
+    right: 1rem;
+
+    background-color: var(--grey-100);
+    box-shadow: 0 1px 18px -4px rgba(0, 0, 0, 0.2),
+      0 0px 2px 0px rgba(0, 0, 0, 0.1);
+
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+  .navShown {
+    visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 250ms ease-in-out;
+  }
+}
+
+@media (min-width: 769px) {
+  .burgerTrigger {
+    display: none;
+  }
 }
