@@ -18,7 +18,6 @@
 .headerNav {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll;
 }
 .headerNav a.headerLink {
   color: #6d6e70;
