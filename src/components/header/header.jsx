@@ -32,7 +32,7 @@ const headerLinks = [
 const Header = ({ siteTitle }) => (
   <header className={styles.header}>
     <div className="container">
-      <Link to="/" className={styles.imageLink}>
+      <Link href="/" className={styles.imageLink} internal>
         <img
           className={styles.headerGdgLogo}
           src={GDGCasaLogo}
