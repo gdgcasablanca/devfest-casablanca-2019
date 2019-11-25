@@ -4,9 +4,11 @@ import cx from 'classnames'
 
 import styles from './card.module.css'
 
-const Card = ({ img, name, description, talkTitle, talkDesc }) => {
+const Card = ({ img, name, description, talkTitle }) => {
   return (
     <div className={styles.card}>
+      {talkTitle && <h4 className={styles.talkTitle}>{talkTitle}</h4>}
+
       <div className={styles.cardTop}>
         {img ? (
           <img className={styles.speakerImage} src={img} alt={name} />
@@ -18,12 +20,6 @@ const Card = ({ img, name, description, talkTitle, talkDesc }) => {
           <p className={styles.speakerDescription}>{description}</p>
         </div>
       </div>
-      {(!!talkTitle || !!talkDesc) && (
-        <div className={styles.cardContent}>
-          {talkTitle && <h4 className={styles.talkTitle}>{talkTitle}</h4>}
-          {talkDesc && <p className={styles.talkDesc}>{talkDesc}</p>}
-        </div>
-      )}
     </div>
   )
 }

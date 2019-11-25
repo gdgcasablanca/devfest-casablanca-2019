@@ -1,9 +1,7 @@
 .card {
   padding: 16px;
-  margin-right: 16px;
-  margin-bottom: 14px;
 
-  max-width: 360px;
+  max-width: 490px;
   box-sizing: border-box;
 
   background-color: transparent;
@@ -11,6 +9,10 @@
   border-radius: 8px;
   transition: 200ms cubic-bezier(0, 0.46, 0.54, 1);
   transition-property: box-shadow, background-color;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
@@ -21,7 +23,6 @@
 .cardTop {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .speakerImage {
@@ -31,10 +32,11 @@
   object-fit: cover;
 
   margin-right: 1rem;
+  flex-shrink: 0;
 }
 
 .defaultImage {
-  background-color: var(--grey-200);
+  background-color: var(--blue-lighter);
   position: relative;
   overflow: hidden;
 }
@@ -47,19 +49,19 @@
   position: absolute;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
 }
 .defaultImage:after {
   --size: 36px;
   border-radius: 50%;
   bottom: 45px;
-  opacity: 0.6;
+  background-color: var(--blue);
 }
 .defaultImage:before {
   --size: 96px;
   border-radius: 50%;
   bottom: -56px;
-  opacity: 0.3;
+  background-color: var(--blue);
 }
 
 .speakerInfo {
@@ -75,17 +77,27 @@
 }
 
 .speakerName {
-  font-size: 28px;
+  font-size: 18px;
   margin: 0;
   font-weight: normal;
   color: var(--blue-dark-2);
 }
 
 .speakerDescription {
-  font-size: 18px;
+  font-size: 14px;
   color: var(--grey-700);
 }
 
 .talkTitle {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  font-weight: 300;
+  margin: 0;
   margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .talkTitle {
+    font-size: 1.1rem;
+  }
 }
