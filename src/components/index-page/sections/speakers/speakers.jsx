@@ -4,7 +4,10 @@ import styles from './speakers.module.css'
 import Section from '../../../_ui/base-section/base-section'
 import Card from '../../../_ui/card/card'
 // import Button from '../../../_ui/button/button'
-import willSmith from '../../../../images/will-smith.jpg'
+import azizi from '../../../../images/speakers/azizi.jpg'
+import rahiche from '../../../../images/speakers/rahiche.jpg'
+import baha from '../../../../images/speakers/baha.jpg'
+import ezouhri from '../../../../images/speakers/ezouhri.jpg'
 
 const Speakers = () => {
   return (
@@ -26,52 +29,34 @@ const Speakers = () => {
 
 const speakers = [
   {
-    name: 'Will Smith',
-    description: 'Product Designer, Google',
-    // img: willSmith,
-    talkTitle: 'Introductions to hulu',
-    talkDesc:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
+    name: 'Abdelfettah Sghiouar',
+    description: 'Cloud Engineer, Google',
+    img: '',
+    talkTitle: 'Intro to container orchestration with kubernetes',
   },
   {
-    name: 'Will Smith',
-    description: 'Product Designer, Google',
-    img: willSmith,
-    talkTitle: 'Introductions to hulu',
-    talkDesc:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
+    name: 'Youssouf EL Azizi',
+    description: 'Software engineer, Obytes',
+    img: azizi,
+    talkTitle: 'Javascript: The best parts',
   },
   {
-    name: 'Will Smith',
-    description: 'Product Designer, Google',
-    img: willSmith,
-    talkTitle: 'Introductions to hulu',
-    talkDesc:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
+    name: 'Raouf Rahiche',
+    description: 'Senior software developer, Abweb',
+    img: rahiche,
+    talkTitle: 'Why flutter is successful',
   },
   {
-    name: 'Will Smith',
-    description: 'Product Designer, Google',
-    img: willSmith,
-    talkTitle: 'Introductions to hulu',
-    talkDesc:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
+    name: 'Anas ait baha',
+    description: 'Software Engineer, SQLI',
+    img: baha,
+    talkTitle: 'Becoming a Software Engineer',
   },
   {
-    name: 'Will Smith',
-    description: 'Product Designer, Google',
-    img: willSmith,
-    talkTitle: 'Introductions to hulu',
-    talkDesc:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
-  },
-  {
-    name: 'Will Smith',
-    description: 'Product Designer, Google',
-    img: willSmith,
-    talkTitle: 'Introductions to hulu',
-    talkDesc:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptates, earum autem nemo minima debitis, numquam labore, cum quis enim laborum nesciunt recusandae quidem? Distinctio doloremque similique recusandae nihil eum.',
+    name: 'Ezouhri Maroua',
+    description: 'UX & Product designer Lead, Braintest',
+    img: ezouhri,
+    talkTitle: 'HCI: Designing for better user experience',
   },
 ]
 
