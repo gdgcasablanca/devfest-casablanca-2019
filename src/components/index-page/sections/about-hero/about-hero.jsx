@@ -14,7 +14,7 @@ const AboutHero = () => {
         alt="A colorfull DevFest slogan"
       />
       <h1 className={styles.casa}>GDG Casablanca</h1>
-      <p class="small-text">November 30, 2019</p>
+      <p className="small-text">November 30, 2019</p>
 
       <div className={styles.separator}></div>
       <p className={cx('p', styles.p)}>

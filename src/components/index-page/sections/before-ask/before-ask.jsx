@@ -24,7 +24,7 @@ const BeforeAsk = () => {
         </div>
         <div className={styles.beforeRight}>
           {beforeStats.map(({ number, label }, index) => (
-            <Stat number={number} label={label} />
+            <Stat number={number} label={label} key={index} />
           ))}
         </div>
       </div>
