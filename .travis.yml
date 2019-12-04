@@ -5,17 +5,19 @@ node_js:
 install:
   - npm install -g firebase-tools
 
-script:
-  - yarn
-  - yarn build
-
 # safelist
 branches:
   only:
     - master
     - develop
+
 jobs:
   include:
+    - stage: test
+      script:
+        - yarn
+        - yarn build
+
     - stage: deploy
       script:
         - yarn build
