@@ -1,0 +1,28 @@
+.aboutHero > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heroImage {
+  max-width: 610px;
+  width: 100%;
+  margin: auto;
+}
+
+h1.casa {
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+  color: var(--grey-400);
+}
+
+.p {
+  text-align: center;
+  color: var(--grey-400);
+}
+
+.separator {
+  height: 12px;
+}

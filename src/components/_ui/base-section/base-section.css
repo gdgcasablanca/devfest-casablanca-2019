@@ -1,0 +1,26 @@
+.section {
+  padding: 6rem 0;
+}
+.section:nth-child(2n) {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(244, 245, 247, 0.44),
+    #f4f5f7
+  );
+}
+.section h1,
+.footer h1 {
+  font-size: 36px;
+  margin-top: 0.4rem;
+  margin-bottom: 1.2rem;
+  font-weight: 100;
+  color: #242424;
+}
+
+.small-text {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin: 0;
+  color: #4a4a4a;
+  font-weight: 500;
+}

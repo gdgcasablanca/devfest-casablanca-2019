@@ -1,0 +1,28 @@
+.sponsorImages {
+  padding: 25px 0;
+}
+
+.sponsorImagesInner {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+
+  padding: 25px 0;
+}
+
+.sponsorImages img {
+  width: 160px;
+  height: auto;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sponsorImages h3 {
+  width: 150px;
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
