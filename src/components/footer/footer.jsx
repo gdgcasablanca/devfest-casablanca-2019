@@ -19,14 +19,31 @@ const footerLinks = [
         label: 'WTM Casablanca',
         link: 'https://wtm.gdgcasablanca.com/',
       },
+      {
+        label: 'Code of conduct',
+        link: '/coc',
+        internal: true,
+      },
+      {
+        label: 'Google Developers Group',
+        link: 'https://developers.google.com/community/gdg',
+      },
+      {
+        label: 'Women Techmakers',
+        link: 'https://www.womentechmakers.com/',
+      },
     ],
   },
   {
-    title: 'Contact us',
+    title: 'Past DevFests',
     links: [
       {
-        label: 'contact@gdgcasablanca.com',
-        link: 'mailto:contact@gdgcasablanca.com',
+        label: 'DevFest Casablanca 2017',
+        link: 'https://devfest17-casabanlca.web.app/',
+      },
+      {
+        label: 'DevFest Casablanca 2018',
+        link: 'https://devfest-casablanca-2018.web.app/',
       },
     ],
   },
@@ -42,8 +59,21 @@ const footerLinks = [
         link: 'https://twitter.com/gdgcasablanca',
       },
       {
-        label: 'Facebook',
         link: 'https://www.facebook.com/GDGCasa/',
+        label: 'Facebook',
+      },
+      {
+        label: 'LinkedIn',
+        link: 'https://www.linkedin.com/company/gdgcasablanca/',
+      },
+    ],
+  },
+  {
+    title: 'Partner & Sponsor',
+    links: [
+      {
+        label: 'contact@gdgcasablanca.com',
+        link: 'mailto:contact@gdgcasablanca.com',
       },
     ],
   },
